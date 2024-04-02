@@ -4,8 +4,9 @@
 
 ## Paso 1: Creamos un contenedor Docker con Jekyll
 
+#### El comando necesario es:
+
 ```
-El comando necesario es:
 docker run -it --rm -v "$PWD:/srv/jekyll" jekyll/jekyll jekyll
 ```
 
@@ -13,10 +14,11 @@ docker run -it --rm -v "$PWD:/srv/jekyll" jekyll/jekyll jekyll
 
 ## Paso 2: Creamos la estructura de directorios y los archivos necesarios para un proyecto Jekyll nuevo
 
-#### Antes de usar este comando debemos estar en la siguiente ruta: /home/usuario
+### Antes de usar este comando debemos estar en la siguiente ruta: /home/usuario
+
+#### El comando necesario es:
 
 ```
-El comando necesario es:
 docker run -it --rm -v "$PWD:/srv/jekyll" jekyll/jekyll jekyll new blog
 ```
 
@@ -44,7 +46,7 @@ docker run -it --rm -p 4000:4000 -v "$PWD:/srv/jekyll" jekyll/jekyll jekyll serv
 http://127.0.0.1:4000
 ```
 
-### Opcion 1 si lo hacemos desde otra maquina
+### Opcion 2 si lo hacemos desde otra maquina
 
 ```
 http://10.0.16.40:4000
